@@ -11,9 +11,14 @@ namespace WebApplication1.Controllers
             "Freezing", "Bracing", "Chilly", "Cool"
         ];
 
+
         const string Nick = "Nick";
 
         const string Favorite = "Commit 1";
+
+        const string Title = "Weather Forecast API";
+
+
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
