@@ -12,6 +12,8 @@ namespace WebApplication1.Controllers
         ];
 
         const string Nick = "Nick";
+
+        const string Favorite = "Commit 1";
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
