@@ -12,7 +12,7 @@ namespace WebApplication1.Controllers
         ];
 
 
-        const string Nick = "Nick";
+        const string Nick = "Nick Editted";
 
         const string Favorite = "Commit 1";
 
