@@ -14,6 +14,8 @@ namespace WebApplication1.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            Console.WriteLine("Commit A.1");
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
@@ -21,6 +23,14 @@ namespace WebApplication1.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        public class WeatherForecast
+        {
+            public DateOnly Date { get; set; }
+            public int TemperatureC { get; set; }
+            public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+            public string? Summary { get; set; }
         }
     }
 }
