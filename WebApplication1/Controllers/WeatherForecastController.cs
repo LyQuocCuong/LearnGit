@@ -17,6 +17,7 @@ namespace WebApplication1.Controllers
         const string Favorite = "Commit 1";
 
         const string Title = "Weather Forecast API";
+        const string Nick = "Nick";
 
 
         [HttpGet(Name = "GetWeatherForecast")]
